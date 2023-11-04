@@ -1,0 +1,25 @@
+:root {
+  
+  --primary-color-light: #ed5464;
+  --primary-color-dark: #264073;
+
+  --yellow-gold: #fecc06;
+
+  --white: #e8e9ee;
+  --black: #0d131b;
+
+  --white-dark:#8c8f9c;
+
+  /* FONTS */
+  --fs-small: 8px;
+  --fs-normal: 16px;
+  --fs-big: 24px;
+  --fs-extra: 32px;
+
+  --fw-light: 300;
+  --fw-normal: 400;
+  --fw-bold: 700;
+
+  /* PADDING */
+  --p-mobile: 0 2.5%;
+}

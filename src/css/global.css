@@ -1,0 +1,19 @@
+.flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.transition{
+  transition: 250ms all linear;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+  text-transform: capitalize;
+}

@@ -1,0 +1,54 @@
+.pokelist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: var(--p-mobile);
+}
+
+.pokelist .card-details {
+  max-width: 768px;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4% 2%;
+  gap: 20px;
+}
+
+.pokelist .card-details .dates-pokemon .info-details {
+  text-transform: capitalize;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.info-details .name,
+.info-details .types,
+.info-details .abilities,
+.info-details .moves {
+  padding: 4px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-details .img-details {
+  border: 2px solid;
+  border-radius: 6px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.card-details .img-details .image {
+  padding: 10px;
+  max-width: 226px;
+  width: 50%;
+}
+
+.info-details .types li,
+.info-details .abilities li,
+.info-details .moves li {
+  list-style: circle;
+  margin-left: 25px;
+}

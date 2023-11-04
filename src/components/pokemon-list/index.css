@@ -1,0 +1,24 @@
+.container-list {
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+.list {
+  max-width: 1280px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 12vh 0;
+  z-index: 0;
+  gap: 15px;
+}
+
+.list a {
+  flex-grow: 1;
+  flex-basis: 10vw;
+}
+
+@media (max-width: 1280px) {
+  .list{
+    padding: 12vh 2.5vw;
+  }
+}
