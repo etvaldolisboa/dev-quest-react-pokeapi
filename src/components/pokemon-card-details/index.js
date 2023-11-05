@@ -9,39 +9,49 @@ const PokemonDetails = ({
   types,
   abilities,
   moves,
-  pokemon,
   index }) => {
 
   const { theme } = useContext(ThemeContext)
 
   return (
-    <ul
+    <section
       className='pokelist transition'
-      style={{backgroundColor: theme.bgColor}}
+      style={{ backgroundColor: theme.bgColor }}
     >
-      <li className='card-details transition'
+      <div className='card-details transition'
         key={index}
-        style={{color: theme.color, background: theme.bgPrimary}}
+        style={{ color: theme.color, backgroundColor: theme.bgPrimary }}
       >
         <h2 className="info-pokemon">info pokemon</h2>
-        <div className="img-details">
+        <div className="img-details"
+              style={{ backgroundColor: theme.bgImg}}
+        
+        >
           <img className='image' src={image} alt={name} />
         </div>
 
         <ul className="dates-pokemon">
           <li className="info-details">
             <h3>name:</h3>
-            <span className="name">{name}</span>
+            <span className="name"
+             style={{ backgroundColor: theme.bgInputInfo}}
+            >{name}</span>
           </li>
 
-          <li className="info-details">
+          <li
+            className="info-details"
+          >
             <h3>types:</h3>
-            <ul className="types">
+            <ul className="types"
+            style={{ backgroundColor: theme.bgInputInfo}}
+            
+            >
               {types?.map((type, index) => {
                 return (
                   <li
-                    className="type"
-                    key={index}
+                  className="type"
+                  
+                  key={index}
                   >
                     <span>
                       {type.type.name}
@@ -56,9 +66,14 @@ const PokemonDetails = ({
             {
               abilities.map((ability, index) => {
                 return (
-                  <ul className="abilities">
+                  <ul className="abilities"
+                  style={{ backgroundColor: theme.bgInputInfo}}
+                  
+                  >
                     <li key={index}
-                      className="ability">
+                      className="ability"
+                      
+                      >
                       <h3>{ability.name}: </h3>
                       {
                         ability.effect_entries.map((effect, index) => {
@@ -78,11 +93,14 @@ const PokemonDetails = ({
           </li>
           <li className="info-details">
             <h3>moves:</h3>
-            <ul className="moves">
+            <ul className="moves"
+              style={{ backgroundColor: theme.bgInputInfo}}
+            
+            >
               {moves?.map((move, index) => {
                 return (
                   <li key={index}
-                    className="move">
+                  className="move">
                     <span>
                       {move.move.name}
                     </span>
@@ -92,9 +110,9 @@ const PokemonDetails = ({
             </ul>
           </li>
         </ul>
-      </li>
-
-    </ul>
+      </div>
+<button>voltar</button>
+    </section>
   )
 }
 export { PokemonDetails }

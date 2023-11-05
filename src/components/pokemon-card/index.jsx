@@ -3,7 +3,6 @@ import { ThemeContext } from "../../context/theme-context";
 import './index.css'
 
 const PokemonCard = ({ name, image }) => {
-
   const { theme } = useContext(ThemeContext)
 
   return (

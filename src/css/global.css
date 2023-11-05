@@ -1,3 +1,13 @@
+@font-face {
+  font-family: 'Pokemon Hollow';
+  src: url(../assets/fonts/pokemon-hollow.ttf);
+}
+
+@font-face {
+  font-family: 'Pokemon Solid';
+  src: url(../assets/fonts/pokemon-solid.ttf);
+}
+
 .flex-center-between {
   display: flex;
   align-items: center;

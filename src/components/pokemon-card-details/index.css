@@ -1,19 +1,36 @@
 .pokelist {
   display: flex;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
-  min-height: 100vh;
+  min-height: calc(100vh - 20px);
   padding: var(--p-mobile);
 }
 
 .pokelist .card-details {
+  margin-top: 10vh;
   max-width: 768px;
   border-radius: 18px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4% 2%;
-  gap: 20px;
+  padding: 2vh 2vw;
+  gap: 12px;
+  border: 1px solid;
+}
+
+.pokelist .card-details .img-details {
+  border: 1px solid;
+  border-radius: 6px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.pokelist .card-details .img-details .image {
+  padding: 10px;
+  max-width: 226px;
+  width: 50%;
 }
 
 .pokelist .card-details .dates-pokemon .info-details {
@@ -23,32 +40,20 @@
   flex-direction: column;
 }
 
-.info-details .name,
-.info-details .types,
-.info-details .abilities,
-.info-details .moves {
+.pokelist .card-details .dates-pokemon .info-details :where(.name, .types, .abilities, .moves) {
   padding: 4px;
   display: flex;
   flex-wrap: wrap;
+  margin: 4px 0 12px;
+  border-radius: 8px;
 }
 
-.card-details .img-details {
-  border: 2px solid;
-  border-radius: 6px;
-  width: 100%;
-  display: grid;
-  place-items: center;
+.pokelist .card-details .dates-pokemon .info-details .name {
+  padding-left: 24px;
+  background-color: red;
 }
 
-.card-details .img-details .image {
-  padding: 10px;
-  max-width: 226px;
-  width: 50%;
-}
-
-.info-details .types li,
-.info-details .abilities li,
-.info-details .moves li {
+.pokelist .card-details .dates-pokemon .info-details :where(.types, .abilities, .moves) li {
   list-style: circle;
-  margin-left: 25px;
+  margin-left: 20px;
 }

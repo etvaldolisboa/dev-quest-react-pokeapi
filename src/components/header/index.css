@@ -12,12 +12,20 @@
   max-width: 1280px;
 }
 
-.header .container-header .logo {
-  max-width: 120px;
-}
-
 @media (max-width: 1280px) {
   .header .container-header {
     padding: 0 2.5vw;
   }
+}
+
+.pokemon-text {
+  font-family: 'Pokemon Solid', sans-serif;
+  font-size: clamp(10px, 12px + 1vw, 20px);
+  color: var(--yellow-gold);
+  letter-spacing: 3px;
+  font-weight: var(--fw-light);
+  text-shadow:
+    .1rem .1rem var(--blue-marine),
+    .1rem 0rem var(--blue-marine),
+    0rem .1rem var(--blue-marine);
 }

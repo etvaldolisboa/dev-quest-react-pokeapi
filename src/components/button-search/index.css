@@ -1,0 +1,16 @@
+.button-mais {
+  padding: 4px;
+  font-weight: var(--fw-bold);
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-size: clamp(10px, 12px + 1vw, 20px);
+  letter-spacing: 2px;
+  margin-bottom: 40px;
+}
+
+.button-mais:hover {
+  border-bottom: 1px solid;
+  filter: invert(100%) brightness(110%);
+}

@@ -1,14 +1,20 @@
+
+
 export const themes = {
   light: {
-    color: 'var(--black',
+    color: 'var(--black)',
     bgPrimary: 'var(--primary-color-light)',
     bgColor: 'var(--white)',
-    bgCard: 'linear-gradient(0deg,  #e8e9ee 50%,  #ed5464 50%)',
+    bgCard: 'linear-gradient(0deg, var(--white) 50%, var(--primary-color-light)  50%)',
+    bgInputInfo: 'var(--bgImput-light)',
+    bgImg: 'var(--bgImput-light)',
   },
   dark: {
     color: 'var(--white)',
     bgPrimary: 'var(--primary-color-dark)',
     bgColor: 'var(--white-dark)',
-    bgCard: 'linear-gradient(0deg,  #686d78 50%,  #264073 50%)',
+    bgCard: 'linear-gradient(0deg,  var(--white-bgCard-dark) 50%, var(--primary-color-dark) 50%)',
+    bgInputInfo: 'var(--bgImput-dark)',
+    bgImg: 'var(--bgImput-dark)',
   }
 }

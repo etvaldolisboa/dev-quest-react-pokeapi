@@ -1,14 +1,21 @@
 :root {
-  
-  --primary-color-light: #ed5464;
-  --primary-color-dark: #264073;
+  --primary-color-light: hsl(354, 81%, 63%);
+  --primary-color-dark: hsl(220, 50%, 30%);
 
-  --yellow-gold: #fecc06;
+  --yellow-gold: #ffcb05;
+  --blue-marine: #3464ae;
 
   --white: #e8e9ee;
   --black: #0d131b;
 
   --white-dark:#8c8f9c;
+  --white-bgCard-dark: #686d78;
+
+
+  --bgImput-light: hsl(354, 81%, 93%);
+  --bgImput-dark: hsl(219, 80%, 20%);
+
+
 
   /* FONTS */
   --fs-small: 8px;
