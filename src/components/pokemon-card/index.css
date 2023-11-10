@@ -1,15 +1,15 @@
 .card-home {
-  border-radius: 25px;
-  padding: 10px;
+  border-radius: 2.5rem;
+  padding: 1rem;
   flex-direction: column;
   border: 1px solid;
 }
 
-.img-home {
-  width: 125px;
-  aspect-ratio: 1;
+.dcard-home:hover {
+  border-color: var(--yellow-gold);
 }
 
-.name-home {
-  font-size: clamp(10px, 12px + 1vw, 20px);
+.img-home {
+  width: 12.5rem;
+  aspect-ratio: 1;
 }

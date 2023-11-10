@@ -111,7 +111,7 @@ const PokemonDetails = ({
           </li>
         </ul>
       </div>
-<button>voltar</button>
+{/* <button>voltar</button> */}
     </section>
   )
 }

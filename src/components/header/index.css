@@ -20,9 +20,9 @@
 
 .pokemon-text {
   font-family: 'Pokemon Solid', sans-serif;
-  font-size: clamp(10px, 12px + 1vw, 20px);
+  font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
   color: var(--yellow-gold);
-  letter-spacing: 3px;
+  letter-spacing: .3rem;
   font-weight: var(--fw-light);
   text-shadow:
     .1rem .1rem var(--blue-marine),

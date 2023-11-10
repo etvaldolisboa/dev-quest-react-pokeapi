@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useContext } from "react";
 import { PokemonCard } from "../pokemon-card";
-import { Button } from '../button'
+import { Button } from '../button-search'
 import './index.css'
 import { ThemeContext } from '../../context/theme-context';
 

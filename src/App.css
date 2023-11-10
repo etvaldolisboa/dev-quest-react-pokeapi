@@ -4,24 +4,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+html{
   font-family: 'Montserrat', sans-serif;
+  font-size: 62.5%;
   font-weight: 400;
-}
-
-@font-face {
-  font-family: 'Pokemon Hollow';
-  src: url(./assets/fonts/pokemon-hollow.ttf);
-}
-
-@font-face {
-  font-family: 'Pokemon Solid';
-  src: url(./assets/fonts/pokemon-solid.ttf);
 }
 
 ul,
 li {
   list-style: none;
-  padding-inline-start: 0;
 }
 
 a {

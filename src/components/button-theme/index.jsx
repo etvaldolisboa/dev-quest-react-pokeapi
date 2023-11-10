@@ -6,7 +6,7 @@ export const ButtonTheme = (props) => {
 
   return (
     <button {...props}
-    style={{ border: 'none', backgroundColor: 'transparent', width: '35px', cursor: 'pointer' }}
+    style={{ border: 'none', backgroundColor: 'transparent', width: '3.5rem', cursor: 'pointer' }}
     />
   )
 }

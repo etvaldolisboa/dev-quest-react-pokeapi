@@ -1,27 +1,27 @@
 :root {
-  --primary-color-light: hsl(354, 81%, 63%);
-  --primary-color-dark: hsl(220, 50%, 30%);
+  --primary-color-light: #ed5463;
+  --primary-color-dark: #264073;
 
   --yellow-gold: #ffcb05;
   --blue-marine: #3464ae;
 
+  --hiperlink-blue: #00f;
+  --hiperlink-yellow: #ff0;
+
   --white: #e8e9ee;
-  --black: #0d131b;
+  --black: #555;
 
   --white-dark:#8c8f9c;
   --white-bgCard-dark: #686d78;
 
-
-  --bgImput-light: hsl(354, 81%, 93%);
-  --bgImput-dark: hsl(219, 80%, 20%);
-
-
+  --bgImput-light: #fcdee126;
+  --bgImput-dark: #0a275c;
 
   /* FONTS */
-  --fs-small: 8px;
-  --fs-normal: 16px;
-  --fs-big: 24px;
-  --fs-extra: 32px;
+  --fs-small: .8rem;
+  --fs-normal: 1.7rem;
+  --fs-big: 2.8rem;
+  --fs-extra: 3.4rem;
 
   --fw-light: 300;
   --fw-normal: 400;
