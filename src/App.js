@@ -1,5 +1,3 @@
-import './App.css';
-
 import { ThemeProvider } from './context/theme-context';
 import { Router } from './router';
 import { Container } from './container';

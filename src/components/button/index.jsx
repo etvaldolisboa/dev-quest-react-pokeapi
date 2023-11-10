@@ -1,6 +1,5 @@
 import React, { useContext } from "react";
 import { ThemeContext } from "../../context/theme-context";
-// import './index.css'
 import styled from "styled-components";
 
 const Button = (props) => {
@@ -20,20 +19,12 @@ const Button = (props) => {
 
   &:hover{
     color: ${theme.hiperlink};
-  // border-bottom: 1px solid;
-
+    border-bottom: 1px solid;
   }
 `
 
   return (
-    <Button
-      className="button-mais transition"
-      type="button"
-      {...props}
-      // style={{ color: theme.bgPrimary }}
-    >
-      carregar mais pokemons...
-    </Button>
+    <Button {...props} type="button" />
   )
 }
 

@@ -1,5 +1,5 @@
 :root {
-  --primary-color-light: #ed5463;
+  --primary-color-light: #ed5564;
   --primary-color-dark: #264073;
 
   --yellow-gold: #ffcb05;
@@ -8,14 +8,14 @@
   --hiperlink-blue: #00f;
   --hiperlink-yellow: #ff0;
 
-  --white: #e8e9ee;
-  --black: #555;
-
+  --white: #e6e9ee;
+  --black: #434a54;
+  
   --white-dark:#8c8f9c;
-  --white-bgCard-dark: #686d78;
+  --white-bgCard-dark: #696d76;
 
-  --bgImput-light: #fcdee126;
-  --bgImput-dark: #0a275c;
+  --bgInput-light: #f17782;
+  --bgInput-dark: #0a275c;
 
   /* FONTS */
   --fs-small: .8rem;
