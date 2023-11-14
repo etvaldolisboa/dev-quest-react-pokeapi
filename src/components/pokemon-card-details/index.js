@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { Button } from "../button";
 import './index.css'
 
-const PokemonDetails = ({
+export const PokemonDetails = ({
   name,
   image,
   types,
@@ -47,24 +47,24 @@ const PokemonDetails = ({
           </li>
           <li className="info-details">
             <h3>abilities:</h3>
-            { abilities.map((ability, index) => {
-                return (
-                  <ul className="abilities" style={{ backgroundColor: theme.bgInputInfo }} >
-                    <li key={index} >
-                      <h3>{ability.name}: </h3>
-                      { ability.effect_entries.map((effect, index) => {
-                          if (effect.language.name.includes('en')) {
-                            return (
-                              <p key={index}>{effect.effect}</p>
-                            )
-                          }
-                        })
+            {abilities.map((ability, index) => {
+              return (
+                <ul className="abilities" style={{ backgroundColor: theme.bgInputInfo }} >
+                  <li key={index} >
+                    <h3>{ability.name}: </h3>
+                    {ability.effect_entries.map((effect, index) => {
+                      if (effect.language.name.includes('en')) {
+                        return (
+                          <p key={index}>{effect.effect}</p>
+                        )
                       }
+                    })
+                    }
 
-                    </li>
-                  </ul>
-                )
-              }).slice(0, 2)
+                  </li>
+                </ul>
+              )
+            }).slice(0, 2)
             }
           </li>
           <li className="info-details">
@@ -84,10 +84,9 @@ const PokemonDetails = ({
           </li>
         </ul>
       </div>
-      <Link onClick={clearPage} to={'/'}>
-        <Button>Back to Pokemons</Button>
+      <Link to={'/'}>
+        <Button onClick={clearPage}>Back to Pokemons</Button>
       </Link>
     </section>
   )
 }
-export { PokemonDetails }

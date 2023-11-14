@@ -5,7 +5,7 @@ import { Button } from '../button'
 import './index.css'
 import { ThemeContext } from '../../context/theme-context';
 
-const PokemonList = ({ pokemons, handleCick }) => {
+export const PokemonList = ({ pokemons, handleCick }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
@@ -27,9 +27,7 @@ const PokemonList = ({ pokemons, handleCick }) => {
           : null
         }
       </div>
-      <Button onClick={handleCick}>Browse More Pokemons... </Button>
+      <Button onClick={handleCick}>Browse More Pokemons...</Button>
     </div >
   )
 }
-
-export { PokemonList }
