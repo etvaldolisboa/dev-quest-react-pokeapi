@@ -1,21 +1,7 @@
-.card-home {
-  border-radius: 2.5rem;
-  padding: 1rem;
-  flex-direction: column;
-  border: 1px solid;
-}
-
-.card-home:hover {
-  transform: scale(.95);
-  box-shadow: inset 0px 0px 1rem ;
-}
-
 .img-home {
   width: 12.5rem;
   aspect-ratio: 1;
-  filter: 
-  drop-shadow(5px 5px 5px hsla(215, 11%, 30%, 0.5))
-  contrast(75%)
-  saturate(90%)
-  ;
+  filter:
+    drop-shadow(5px 5px 5px hsla(215, 11%, 30%, 0.5)) contrast(118%) saturate(80%);
+  box-shadow: none;
 }

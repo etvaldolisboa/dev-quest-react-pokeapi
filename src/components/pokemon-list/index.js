@@ -9,10 +9,7 @@ const PokemonList = ({ pokemons, handleCick }) => {
   const { theme } = useContext(ThemeContext)
 
   return (
-    <div
-      className='container-list flex-center-between '
-      style={{ backgroundColor: theme.bgColor }}
-    >
+    <div className='container-list' style={{ backgroundColor: theme.bgColor }}    >
       < div className="list">
         {pokemons.length > 0 ?
           pokemons.map((pokemon, index) => {
@@ -21,7 +18,8 @@ const PokemonList = ({ pokemons, handleCick }) => {
                 <PokemonCard
                   id={pokemon.id}
                   name={pokemon.name}
-                  image={pokemon.sprites.other["dream_world"].front_default}
+                  image={pokemon.sprites.other['home'].front_default}
+                // image={pokemon.sprites.other["dream_world"].front_default}
                 />
               </Link>
             )

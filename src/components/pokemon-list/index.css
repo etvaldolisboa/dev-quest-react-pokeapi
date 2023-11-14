@@ -1,5 +1,7 @@
 .container-list {
   min-height: 100vh;
+  display: flex;
+  align-items: center;
   justify-content: center;
   flex-direction: column;
 }
@@ -14,8 +16,7 @@
 }
 
 .list a {
-  flex-grow: 1;
-  flex-basis: 10vw;
+  flex: 1 0 10vh;
 }
 
 @media (max-width: 1280px) {

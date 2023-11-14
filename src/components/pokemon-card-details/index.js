@@ -15,8 +15,8 @@ const PokemonDetails = ({
   const { theme } = useContext(ThemeContext)
 
   return (
-    <section className='pokelist ' style={{ backgroundColor: theme.bgColor }} >
-      <div className='card-details '
+    <section className='pokelist' style={{ backgroundColor: theme.bgColor }} >
+      <div className='card-details'
         key={index}
         style={{ color: theme.color, backgroundColor: theme.bgPrimary }}
       >
@@ -50,7 +50,7 @@ const PokemonDetails = ({
             { abilities.map((ability, index) => {
                 return (
                   <ul className="abilities" style={{ backgroundColor: theme.bgInputInfo }} >
-                    <li key={index}  className="ability" >
+                    <li key={index} >
                       <h3>{ability.name}: </h3>
                       { ability.effect_entries.map((effect, index) => {
                           if (effect.language.name.includes('en')) {

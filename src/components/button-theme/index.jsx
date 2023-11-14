@@ -6,7 +6,8 @@ export const ButtonTheme = (props) => {
         border: 'none',
         backgroundColor: 'transparent',
         width: '2.8rem',
-        cursor: 'pointer'
+        cursor: 'pointer',
+        transition: '300ms ease-in-out all'
       }}
       type="button"
     />

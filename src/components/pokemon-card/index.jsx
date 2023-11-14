@@ -17,8 +17,23 @@ const PokemonCard = ({ name, image }) => {
           color: ${theme.hover};
         }
   `
+    const Card = styled.div`
+    transition: 200ms all;
+    border-radius: 2.5rem;
+    padding: 1rem;
+    flex-direction: column;
+    box-shadow: inset 0px 0px 2rem ${theme.hoverCard};
+  
+    &:hover {
+      box-shadow: inset 0px 0px .4rem ${theme.hoverCardActive}, 0 0 1rem ${theme.hover};
+      transform: scale(.95);
+}
+
+
+`
+
   return (
-    <div
+    <Card
       className="card-home flex-center-between "
       style={{
         color: theme.color,
@@ -27,7 +42,7 @@ const PokemonCard = ({ name, image }) => {
     >
       <img className="img-home" src={image} alt={name} />
       <Title> {name} </Title>
-    </div>
+    </Card>
   )
 }
 

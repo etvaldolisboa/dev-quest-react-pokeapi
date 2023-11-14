@@ -16,13 +16,13 @@ const Button = (props) => {
   letter-spacing: .2rem;
   margin-bottom: 4rem;
   color: ${theme.bgPrimary};
+  transition: 250ms all linear;
 
   &:hover{
-    color: ${theme.hiperlink};
+    color: ${theme.hover};
     border-bottom: 1px solid;
   }
 `
-
   return (
     <Button {...props} type="button" />
   )

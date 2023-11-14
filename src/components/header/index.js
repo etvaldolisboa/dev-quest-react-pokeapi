@@ -8,8 +8,7 @@ import './index.css'
 const Header = ({ clearPage }) => {
   const { theme } = useContext(ThemeContext)
   return (
-    <header className='header '
-            style={{ backgroundColor: theme.bgPrimary }}>
+    <header className='header' style={{ backgroundColor: theme.bgPrimary }}>
       <div className="container-header flex-center-between">
         <Link onClick={clearPage} to={'/'} alt='logo'>
           <h1 className='pokemon-text' title='home'>Pokeapi Dev Quest</h1>
