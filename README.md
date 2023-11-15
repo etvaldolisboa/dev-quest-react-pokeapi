@@ -44,4 +44,4 @@ A segunda pagina, que so eh carregada quando o usuario clica em cima de um pokem
 
 ## Pagina do projeto
 
-- [Acessar página do projeto](https://etvaldolisboa.github.io/projeto-inicial-fetch-github-api/)
+** ainda ou postar no vercel
