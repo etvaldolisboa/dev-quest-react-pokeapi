@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
 
 @font-face {
-  font-family: 'Pokemon Hollow';
-  src: url(../assets/fonts/pokemon-hollow.ttf);
-}
-
-@font-face {
   font-family: 'Pokemon Solid';
   src: url(../assets/fonts/pokemon-solid.ttf);
 }
@@ -20,10 +15,6 @@ html {
   font-family: 'Roboto', sans-serif;
   font-size: 62.5%;
   font-weight: 400;
-}
-
-body{
-  overflow-y: auto;
 }
 
 body::-webkit-scrollbar {
