@@ -20,14 +20,14 @@
 
 .pokemon-text {
   font-family: 'Pokemon Solid', sans-serif;
-  font-size: clamp(1rem, 1.2rem + 1vw, 2rem);
+  font-size: var(--fs-big);
+  font-weight: var(--fw-bold);
   color: var(--yellow-gold);
   letter-spacing: .3rem;
-  font-weight: var(--fw-light);
   text-shadow:
-    .1rem .1rem var(--primary-dark),
-    .1rem 0rem var(--primary-dark),
-    0rem .1rem var(--primary-dark);
+    1px 1px var(--primary-dark),
+    0 0 2px var(--primary-dark),
+    -1px -1px var(--primary-dark);
     transition: 100ms ease-in-out all;
 }
 

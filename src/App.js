@@ -1,14 +1,17 @@
 import { ThemeProvider } from './context/theme-context';
-import { Router } from './router';
-import { Container } from './container';
+import { AppRouter } from './router/routes';
+import { Header } from './components/header';
+import { BrowserRouter } from 'react-router-dom';
+
 
 function App() {
   return (
     <>
       <ThemeProvider>
-        <Container>
-          <Router />
-        </Container>
+        <BrowserRouter>
+          <Header/>
+          <AppRouter />
+        </BrowserRouter>
       </ThemeProvider>
     </>
   )

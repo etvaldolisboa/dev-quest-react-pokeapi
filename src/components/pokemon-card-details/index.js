@@ -15,7 +15,7 @@ export const PokemonDetails = ({
   const { theme } = useContext(ThemeContext)
 
   return (
-    <section className='pokelist' style={{ backgroundColor: theme.bgColor }} >
+    <main className='pokelist flex-center-center-column' style={{ backgroundColor: theme.bgColor }} >
       <div className='card-details'
         key={index}
         style={{ color: theme.color, backgroundColor: theme.bgPrimary }}
@@ -87,6 +87,6 @@ export const PokemonDetails = ({
       <Link to={'/'}>
         <Button onClick={clearPage}>Back to Pokemons</Button>
       </Link>
-    </section>
+    </main>
   )
 }

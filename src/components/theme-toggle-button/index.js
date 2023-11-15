@@ -8,7 +8,6 @@ import moon from '../../assets/images/moon.png'
 export const ThemeToggle = () => {
   const { theme, setTheme } = useContext(ThemeContext)
 
-  // const localStorage.setItem('theme', theme);
   return (
     <>
       <ButtonTheme

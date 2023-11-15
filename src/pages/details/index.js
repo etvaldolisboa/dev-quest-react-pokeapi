@@ -1,8 +1,7 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getPokemons, getAllPokemons, getAlilitiesPokemons } from '../services'
-import { Header } from "../components/header";
-import { PokemonDetails } from "../components/pokemon-card-details";
+import { getPokemons, getAbilitiesPokemons } from '../../services'
+import { PokemonDetails } from "../../components/pokemon-card-details";
 
 const Details = () => {
   const [pokemon, setPokemon] = useState({ details: '', abilities: [] })
@@ -12,7 +11,7 @@ const Details = () => {
     const fetchData = async () => {
       const pokemonDetails = await getPokemons(id)
       const pokemonAbilities = await Promise.all(pokemonDetails.abilities.map(async ability => {
-        return await getAlilitiesPokemons(ability.ability.name)
+        return await getAbilitiesPokemons(ability.ability.name)
       }))
 
       setPokemon({
@@ -25,7 +24,6 @@ const Details = () => {
 
   return (
     <>
-      <Header />
         <PokemonDetails
           name={pokemon.details.name}
           image={pokemon.details.sprites?.other["dream_world"].front_default}

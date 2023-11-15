@@ -12,10 +12,10 @@ async function getAllPokemons(limit, offset) {
   return data.results;
 }
 
-async function getAlilitiesPokemons(pokemon) {
+async function getAbilitiesPokemons(pokemon) {
   const res = await fetch(`${baseUrl}/ability/${pokemon}`);
   const data = await res.json()
   return data;
 }
 
-export { getPokemons, getAllPokemons, getAlilitiesPokemons }
+export { getPokemons, getAllPokemons, getAbilitiesPokemons }

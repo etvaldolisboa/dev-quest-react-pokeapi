@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { getPokemons, getAllPokemons } from '../services'
-import { Header } from "../components/header";
-import { PokemonList } from "../components/pokemon-list";
+import { getPokemons, getAllPokemons } from '../../services'
+// import { Header } from "../../components/header";
+import { PokemonList } from "../../components/pokemon-list";
 
 
 const Home = () => {
@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <PokemonList
         pokemons={pokemons}
         handleCick={handleClick} />

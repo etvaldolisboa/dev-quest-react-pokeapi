@@ -7,25 +7,27 @@
   --blue-marine: #4488f0;
   --bgInput-light: #f5a6ac;
   --bgInput-dark: #0a275c;
-  
+
   --white: #fff;
   --black: #000;
-  
+
   --color-gray-50: #e6e9ee;
   --color-gray-300: #696d76;
-  --color-gray-500:#777;
-  --color-gray-800:#333;
+  --color-gray-500: #535368;
+  --color-gray-800: #333;
   --color-gray-900: #222;
 
+  --theme-card-light: linear-gradient(0deg, #e6e9ee 49%, #000 51%, #ed5564 51%);
+  --theme-card-dark: linear-gradient(0deg, #696d76 49%, #fff 51%, #264073 51%);
+
   /* FONTS */
-  --fs-small: .8rem;
-  --fs-normal: 1.5rem;
-  --fs-big: 2.8rem;
-  --fs-extra: 3.4rem;
+  --fs-normal: clamp(1rem, 1.2rem + 5vw, 2rem);
+  --fs-big: clamp(1rem, 1.5rem + 5vw, 2rem);
+  --fs-extra: clamp(1rem, 1.8rem + 5vw, 2.4rem);
 
   --fw-light: 300;
   --fw-normal: 400;
-  --fw-bold: 700;
+  --fw-bold: 900;
 
   /* PADDING */
   --p-mobile: 0 2.5%;
