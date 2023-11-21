@@ -46,7 +46,7 @@ export const PokemonDetails = ({
     justify-content: center;
     border: 1px solid;
     margin: 1.5vh 0;
-    background-color: ${theme.bgImg};
+    background-color: ${theme.bgInfo};
     
     img{
       padding: 1rem;
@@ -56,14 +56,14 @@ export const PokemonDetails = ({
       brightness(90%) contrast(85%) saturate(80%);
     }
   `
-  const Dates = styled.ul`
+  const Dates = styled.div`
     font-size: var(--fs-normal);
     text-transform: capitalize;
     text-align: justify;
 
     span, ul{
-      background-color: ${theme.bgInputInfo};
-      padding: .4rem;
+      background-color: ${theme.bgInfo};
+      padding: .2rem;
       font-weight: var(--fw-light);
       border-radius: 8px;
       display: flex;
@@ -74,20 +74,20 @@ export const PokemonDetails = ({
     }
   `
   return (
-    <PokeList >
+    <PokeList>
       <CardDetails key={index}>
         <h2>info pokemon</h2>
         <ImageDetails>
           <img src={image} alt={name} />
         </ImageDetails>
         <Dates>
-          <li >
+          <div>
             <h3>name:</h3>
             <span>{name} #{id}</span>
-          </li>
-          <li  >
+          </div>
+          <div>
             <h3>types:</h3>
-            <ul >
+            <ul>
               {types?.map((type, index) => {
                 return (
                   <li key={index}>
@@ -98,8 +98,8 @@ export const PokemonDetails = ({
                 )
               })}
             </ul>
-          </li>
-          <li>
+          </div>
+          <div>
             <h3>abilities:</h3>
             {abilities.map((ability, index) => {
               return (
@@ -120,8 +120,8 @@ export const PokemonDetails = ({
               )
             }).slice(0, 2)
             }
-          </li>
-          <li>
+          </div>
+          <div>
             <h3>moves:</h3>
             <ul>
               {moves?.map((move, index) => {
@@ -134,7 +134,7 @@ export const PokemonDetails = ({
                 )
               }).slice(0, 15)}
             </ul>
-          </li>
+          </div>
         </Dates>
       </CardDetails>
       <Link to={'/'}>

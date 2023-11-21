@@ -6,8 +6,7 @@ export const themes = {
     bgPrimary: 'var(--primary-light)',
     bgColor: 'var(--color-gray-50)',
     bgCard: 'var(--theme-card-light)',
-    bgInputInfo: 'var(--bgInput-light)',
-    bgImg: 'var(--bgInput-light)',
+    bgInfo: 'var(--bgInput-light)',
     hover: 'var(--blue-marine)',
     hoverCard: 'var(--color-gray-300)',
     hoverCardActive: 'var(--color-gray-800)'
@@ -17,8 +16,7 @@ export const themes = {
     bgPrimary: 'var(--primary-dark)',
     bgColor: 'var(--color-gray-800)',
     bgCard: 'var(--theme-card-dark)',
-    bgInputInfo: 'var(--bgInput-dark)',
-    bgImg: 'var(--bgInput-dark)',
+    bgInfo: 'var(--bgInput-dark)',
     hover: 'var(--yellow-gold)',
     hoverCard: 'var(--color-gray-900)',
     hoverCardActive: 'var(--color-gray-500)'
