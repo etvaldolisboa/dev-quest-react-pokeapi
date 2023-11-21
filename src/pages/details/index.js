@@ -26,6 +26,7 @@ const Details = () => {
     <>
         <PokemonDetails
           name={pokemon.details.name}
+          id={pokemon.details.id}
           image={pokemon.details.sprites?.other["dream_world"].front_default}
           types={pokemon.details.types}
           abilities={pokemon.abilities}

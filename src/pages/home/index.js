@@ -29,7 +29,7 @@ const Home = () => {
   return (
     <PokemonList
       pokemons={pokemons}
-      handleCick={handleClick} />
+      handleClick={handleClick} />
   )
 }
 

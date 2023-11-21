@@ -5,7 +5,7 @@ import { Button } from '../button'
 import { ThemeContext } from '../../context/theme-context';
 import styled from "styled-components";
 
-export const PokemonList = ({ pokemons, handleCick }) => {
+export const PokemonList = ({ pokemons, handleClick }) => {
   const { theme } = useContext(ThemeContext)
 
   const Pokelist = styled.main`
@@ -38,7 +38,7 @@ export const PokemonList = ({ pokemons, handleCick }) => {
           : null
         }
       </List>
-      <Button onClick={handleCick}>Browse More Pokemons...</Button>
+      <Button onClick={handleClick}>Browse More Pokemons...</Button>
     </Pokelist >
   )
 }
