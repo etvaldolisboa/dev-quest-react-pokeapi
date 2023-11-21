@@ -42,6 +42,5 @@ A segunda pagina, que so eh carregada quando o usuario clica em cima de um pokem
 ## Preview 📄
 <img src='./src/assets/preview/preview-live.gif'>
 
-## Pagina do projeto
-
-** ainda ou postar no vercel
+## Deploy 📲
+[Live in Vercel ](https://dev-quest-react-pokeapi.vercel.app/)
