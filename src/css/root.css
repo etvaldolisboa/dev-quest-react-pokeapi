@@ -21,9 +21,9 @@
   --theme-card-dark: linear-gradient(0deg, #696d76 49%, #fff 51%, #264073 51%);
 
   /* FONTS */
-  --fs-normal: clamp(1rem, 1.2rem + 5vw, 2rem);
-  --fs-big: clamp(1rem, 1.5rem + 5vw, 2rem);
-  --fs-extra: clamp(1rem, 1.8rem + 5vw, 2.4rem);
+  --fs-normal: clamp(1rem, .8rem + .5vw, 1.8rem);
+  --fs-big: clamp(1rem, 1.5rem + .5vw, 2rem);
+  --fs-extra: clamp(1rem, 1.8rem + .5vw, 3rem);
 
   --fw-light: 300;
   --fw-normal: 400;
@@ -31,4 +31,5 @@
 
   /* PADDING */
   --p-mobile: 0 2.5%;
+  justify-content:space- ;
 }
