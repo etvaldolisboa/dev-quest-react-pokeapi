@@ -9,15 +9,10 @@ export const ThemeToggle = () => {
   const { theme, setTheme } = useContext(ThemeContext)
 
   return (
-    <>
-      <ButtonTheme
-        onClick={() => setTheme(theme === themes.light ? themes.dark : themes.light)}
-      >
-        {theme === themes.light ?
-          <img src={sun} alt="sun" /> :
-          <img src={moon} alt="moon" />
-        }
-      </ButtonTheme>
-    </>
+    <ButtonTheme onClick={() => setTheme(theme === themes.light ? themes.dark : themes.light)}>
+      {theme === themes.light ?
+        <img src={sun} alt="sun" /> :
+        <img src={moon} alt="moon" />}
+    </ButtonTheme>
   )
 }

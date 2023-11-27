@@ -31,7 +31,7 @@ export const PokemonList = ({ pokemons, handleClick }) => {
         {pokemons.length > 0 ?
           pokemons.map((pokemon, index) => {
             return (
-              <Link key={index} to={`/details/${pokemon.id}`} style={{ flex: '1 0 10vh' }} >
+              <Link key={index} to={`/details-of-pokemon/${pokemon.name}`} style={{ flex: '1 0 10vh' }} >
                 <PokemonCard
                   id={pokemon.id}
                   name={pokemon.name}
