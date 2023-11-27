@@ -32,8 +32,8 @@ export const PokemonDetails = ({
       'title title' 
       'imagaDetails description';
       grid-template-columns: 1fr 1fr;
-      border-radius: 1.8rem;
-      padding: 2rem;
+      border-radius: 2rem;
+      padding: 1rem;
       color: ${theme.color};
       background-color: ${theme.bgPrimary};
       gap: 15px;
