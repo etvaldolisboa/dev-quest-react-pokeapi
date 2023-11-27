@@ -19,6 +19,7 @@ export const PokemonList = ({ pokemons, handleClick }) => {
     z-index: 0;
     gap: 1.5rem;
     padding: 0 2.5vw;
+    margin-top: 12vh;
 
   @media (max-width: 600px) {
       margin-top: 10vh;
@@ -31,7 +32,7 @@ export const PokemonList = ({ pokemons, handleClick }) => {
         {pokemons.length > 0 ?
           pokemons.map((pokemon, index) => {
             return (
-              <Link key={index} to={`/details-of-pokemon/${pokemon.name}`} style={{ flex: '1 0 15vw' }} >
+              <Link key={index} to={`/details-of-pokemon/${pokemon.name}`} style={{ flex: '1 0 10vw' }} >
                 <PokemonCard
                   id={pokemon.id}
                   name={pokemon.name}
