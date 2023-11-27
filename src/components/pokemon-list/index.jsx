@@ -9,7 +9,7 @@ export const PokemonList = ({ pokemons, handleClick }) => {
   const { theme } = useContext(ThemeContext)
 
   const Pokelist = styled.main`
-    min-height: 100vh;`
+    min-height: 95vh;`
 
   const List = styled.div`
     max-width: 1280px;

@@ -16,7 +16,7 @@ export const PokemonDetails = ({
 
   const { theme } = useContext(ThemeContext);
   const PokeList = styled.main`
-      min-height: 100vh;
+      min-height: 95vh;
       padding: var(--p-mobile);
       display: flex;
       align-items: center;
@@ -79,7 +79,7 @@ export const PokemonDetails = ({
 
     @media (max-width: 600px) {
         img{
-          max-width: 24rem;
+          max-width: 20rem;
         }
     }
     `
@@ -114,23 +114,18 @@ export const PokemonDetails = ({
         flex-direction: column;
         padding-bottom: .75rem
       }
-
+      
       .move {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
       }
-
-      @media (max-width: 600px) {
-        //* add fuction click
-        // li {
-        //   display: none
-        // }
       
-        .item.ativo li {
-          display: block;
+      @media (max-width: 600px) {
+        .item:nth-child(n+3) {
+          overflow-y: auto;
+          height: 8.5vh;
         }
-      }
     `
   return (
     <PokeList>
@@ -170,7 +165,7 @@ export const PokemonDetails = ({
 
                 </li>
               )
-            }).slice(0, 2)
+            }).slice(0, 5)
             }
           </ul>
           <h3>moves:</h3>

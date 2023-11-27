@@ -62,3 +62,5 @@ a {
 img {
   width: 100%;
 }
+
+::-webkit-scrollbar{display: none;}
