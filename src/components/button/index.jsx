@@ -17,7 +17,7 @@ export const Button = (props) => {
       letter-spacing: .2rem;
       color: ${theme.color};
       
-      margin-bottom: 4rem;
+      margin: 2rem 0 4rem;
       transition: 250ms all linear;
 
       &:hover{

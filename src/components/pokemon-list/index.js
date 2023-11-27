@@ -18,7 +18,12 @@ export const PokemonList = ({ pokemons, handleClick }) => {
     padding: 12vh 0;
     z-index: 0;
     gap: 1.5rem;
-    padding: 12vh 2.5vw;`
+    padding: 0 2.5vw;
+
+  @media (max-width: 600px) {
+      margin-top: 10vh;
+    }
+  `
 
   return (
     <Pokelist className='flex-center-center-column' style={{ backgroundColor: theme.bgColor }}    >

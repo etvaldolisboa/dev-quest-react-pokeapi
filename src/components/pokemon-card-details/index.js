@@ -3,6 +3,7 @@ import { ThemeContext } from "../../context/theme-context"
 import { Link } from "react-router-dom";
 import { Button } from "../button";
 import styled from "styled-components";
+import './index.css'
 
 export const PokemonDetails = ({
   name,
@@ -13,37 +14,41 @@ export const PokemonDetails = ({
   moves,
   clearPage,
   index }) => {
-  const { theme } = useContext(ThemeContext)
+    const { theme } = useContext(ThemeContext);
 
-  const PokeList = styled.main`
+    const PokeList = styled.main`
+    min-height: 100vh;
     padding: var(--p-mobile);
     display: flex;
-    min-height: 100vh;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     background-color: ${theme.bgColor} ;
-    `
+  `
   const CardDetails = styled.div`
-    margin: 10vh 0 2vh;
     max-width: 124rem;
     display: grid;
     grid-template-areas:
      'title title' 
      'imagaDetails description';
-    grid-template-columns: 35% auto;
-    border-radius: 1.8rem;
-    padding: 2rem;
-    color: ${theme.color};
-    background-color: ${theme.bgPrimary};
-    gap: 15px;
-  
-    h2{
-      grid-area: title;
-      margin: 1.5rem 0;
-      font-size: var(--fs-extra);
-      font-weight: var(--fw-bold);
-      text-align: center; 
+     grid-template-columns: 1fr 1fr;
+     border-radius: 1.8rem;
+     padding: 2rem;
+     color: ${theme.color};
+     background-color: ${theme.bgPrimary};
+     gap: 15px;
+     margin-top: 10vh;
+     
+     h2{
+       grid-area: title;
+       margin: 1.5rem 0;
+       font-size: var(--fs-extra);
+       font-weight: var(--fw-bold);
+       text-align: center; 
+      }
+    
+    @media (max-width: 600px) {
+        display: block;
     }
   `
   const ImageDetails = styled.div`
@@ -54,126 +59,122 @@ export const PokemonDetails = ({
       position: relative;
       background: ${theme.bgInfo};
       border-radius: 1.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%
     }
 
     img{
       padding: 1rem;
       max-width: 48rem;
     }
+
     .id{
       position: absolute;
       color: ${theme.color};
       bottom: 0;
       left: 1rem;
     }
-  
-    div{
-      display: flex;
-      justify-content: space-around;
-      margin-top: 1rem;
-      align-items: center;
-    }
 
-    h3{
-      margin: 1rem 0;
-      font-size: var(--fs-big);
-    }
-
-    ul, li{
-      display: flex;
-      gap: 1rem;
-    }
-
-    span{
-      text-transform: capitalize;
-      font-size: var(--fs-normal);
-      background-color: ${theme.bgInfo};
-      padding: .5rem;
-      border-radius: 8px;
-      display: inline-flex;
-    }
+  @media (max-width: 600px) {
+      img{
+        max-width: 24rem;
+      }
+  }
   `
   const Dates = styled.div`
     grid-area: description;
     font-size: var(--fs-normal);
-    text-transform: capitalize;
-    text-align: justify;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
 
-    span, ul{
-      background-color: ${theme.bgInfo};
-      padding: .5rem;
-      font-weight: var(--fw-light);
+
+    h3{
+      font-weight: var(--fw-bold);
+      margin: .65rem 0 1rem;
+    }
+    
+    .item {
+      padding: 1rem;
       border-radius: 8px;
+      background-color: ${theme.bgInfo};
+      gap: .5rem;
+      text-transform: capitalize;
+    }
+    
+    li{
+      // display: none
+    }
+
+    .type{
+      display: flex;
+    }
+    
+    .ability {
+      diplay: flex;
+      flex-direction: column;
+      padding-bottom: .75rem
+    }
+
+    .move {
       display: flex;
       flex-wrap: wrap;
-    }
-    ul{
-      margin: .4rem 0 1.2rem;
+      justify-content: space-between;
     }
   `
   return (
     <PokeList>
       <CardDetails key={index}>
-        <h2>info pokemon</h2>
+        <h2>Pokemon {name} Information</h2>
         <ImageDetails>
           <div className="image">
             <img src={image} alt={name} />
             <h2 className="id">#{id}</h2>
           </div>
-
-          <div>
-            <h3>name:  <span>{name}</span> </h3>
-            <h3>types:</h3>
-            <ul>
-              {types?.map((type, index) => {
-                return (
-                  <li key={index}>
-                    <span>
-                      {type.type.name}
-                    </span>
-                  </li>
-                )
-              })}
-            </ul>
-          </div>
         </ImageDetails>
         <Dates>
-          <div>
-            <h3>abilities:</h3>
+          <h3>types:</h3>
+          <ul className="item type">
+            {types?.map((type, index) => {
+              return (
+                <li key={index} >
+                  <span>{type.type.name}</span>
+                </li>
+              )
+            })}
+          </ul>
+          <h3>abilities:</h3>
+          <ul className="item">
             {abilities.map((ability, index) => {
               return (
-                <ul  >
-                  <li key={index} >
-                    <h3>{ability.name}: </h3>
-                    {ability.effect_entries.map((effect, index) => {
-                      if (effect.language.name.includes('en')) {
-                        return (
-                          <p key={index}>{effect.effect}</p>
-                        )
-                      }
-                    })
+                <li key={index} className="ability">
+                  <h3>{ability.name}: </h3>
+                  {ability.effect_entries.map((effect, index) => {
+                    if (effect.language.name.includes('en')) {
+                      return (
+                        <p key={index}>{effect.effect};</p>
+                      )
                     }
+                  })
+                  }
 
-                  </li>
-                </ul>
+                </li>
               )
             }).slice(0, 2)
             }
-          </div>
-          <div>
-            <h3>moves:</h3>
-            <ul>
-              {moves?.map((move, index) => {
-                return (
-                  <li key={index}>
-                    <span>
-                      {move.move.name};
-                    </span>
-                  </li>
-                )
-              }).slice(0, 30)}
-            </ul>
-          </div>
+          </ul>
+          <h3>moves:</h3>
+          <ul className="item ativo move">
+            {moves?.map((move, index) => {
+              return (
+                <li key={index}>
+                  <span> {move.move.name};</span>
+                </li>
+              )
+            }).slice(0, 30)}
+          </ul>
         </Dates>
       </CardDetails>
       <Link to={'/'}>
