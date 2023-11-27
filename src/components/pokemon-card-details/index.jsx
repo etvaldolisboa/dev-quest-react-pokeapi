@@ -68,6 +68,7 @@ export const PokemonDetails = ({
       img{
         padding: 1rem;
         max-width: 48rem;
+        aspect-ratio: 48/48;
       }
 
       .id{
